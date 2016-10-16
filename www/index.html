@@ -10,21 +10,13 @@
   <body>
 <!-- シーン -->
 <a-scene>
-  <!-- アセット -->
-       <a-entity>
-        <a-camera fov="120" near="0.1" wasd-controls-enabled="false" user-height="1"></a-camera>
-      </a-entity>
-  
-  <a-assets>
-    <!-- 3Dモデルデータ -->
-    <a-asset-item id="cow-obj" src="assets/Pokeball.obj"></a-asset-item>
-    <!-- マテリアルデータ -->
-    <a-asset-item id="cow-mtl" src="assets/Pokeball.mtl"></a-asset-item>
-  </a-assets>
- 
-  <!-- 3Dモデル -->
-  <a-entity obj-model="obj: #cow-obj; mtl: #cow-mtl" position="0 1 -1.5" rotation="0 0 0"></a-entity>
- 
+
+      <a-assets>
+        <img id="pdx" src="images/texture.jpg">
+      </a-assets>
+
+      <a-image src="images/texture.jpg" width="23" height="17" position="0 1.2 -20"
+               scale="1 1 1"></a-image>  
   <!-- 背景 -->
   <a-sky color="#fafafa"></a-sky>
 </a-scene>
