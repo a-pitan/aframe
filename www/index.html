@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Composite</title>
+    <meta name="description" content="Composite — A-Frame">
+    <script src="js/js.js"></script>
+  </head>
+  <body>
+<!-- シーン -->
+<a-scene>
+  <!-- アセット -->
+  <a-assets>
+    <!-- 3Dモデルデータ -->
+    <a-asset-item id="cow-obj" src="assets/Pokeball.obj"></a-asset-item>
+    <!-- マテリアルデータ -->
+    <a-asset-item id="cow-mtl" src="assets/Pokeball.mtl"></a-asset-item>
+  </a-assets>
+ 
+  <!-- 3Dモデル -->
+  <a-entity obj-model="obj: #cow-obj; mtl: #cow-mtl" position="0 1 -1.5" rotation="0 135 0"></a-entity>
+ 
+  <!-- 背景 -->
+  <a-sky color="#fafafa"></a-sky>
+</a-scene>
+
+  </body>
+</html>
