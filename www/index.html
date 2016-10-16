@@ -11,6 +11,10 @@
 <!-- シーン -->
 <a-scene>
   <!-- アセット -->
+       <a-entity>
+        <a-camera fov="120" near="0.1" wasd-controls-enabled="false" user-height="1"></a-camera>
+      </a-entity>
+  
   <a-assets>
     <!-- 3Dモデルデータ -->
     <a-asset-item id="cow-obj" src="assets/Pokeball.obj"></a-asset-item>
@@ -19,7 +23,7 @@
   </a-assets>
  
   <!-- 3Dモデル -->
-  <a-entity obj-model="obj: #cow-obj; mtl: #cow-mtl" position="0 1 -1.5" rotation="0 135 0"></a-entity>
+  <a-entity obj-model="obj: #cow-obj; mtl: #cow-mtl" position="0 1 -1.5" rotation="0 0 0"></a-entity>
  
   <!-- 背景 -->
   <a-sky color="#fafafa"></a-sky>
